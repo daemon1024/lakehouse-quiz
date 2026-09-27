@@ -1,0 +1,28 @@
+/* Norwester @font-face is provided by the @fontsource/norwester npm package,
+   imported in src/main.js. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Norwester', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
+  /* Wine / eggplant purple like the poster's outer petals.
+     Stacked in one `background` so the radial glows sit above the linear base. */
+  background:
+    radial-gradient(circle at 50% 35%, rgba(225, 29, 116, 0.18) 0%, transparent 50%),   /* magenta center glow */
+    radial-gradient(circle at 50% 30%, rgba(249, 115, 22, 0.10) 0%, transparent 40%),   /* orange whisper */
+    linear-gradient(135deg, #1a0612 0%, #260918 35%, #3a0f26 50%, #260918 65%, #1a0612 100%);
+  background-color: #1a0612; /* fallback wine purple */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+}
